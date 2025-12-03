@@ -11,11 +11,11 @@ class CustomModel(ControlModel):
     """
 
     type = "RectangleLabels"  
-    model_path = "team_chambe_3L_fine_tune.pt"
+    model_path = "etude_60.pt"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        logger.info(f"CupraModel loading weights from path: {self.model_path}")
+        logger.info(f"Loading weights: {self.model_path}")
         self.model = self.get_cached_model(self.model_path)             
 
     @classmethod
