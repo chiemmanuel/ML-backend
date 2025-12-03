@@ -30,7 +30,7 @@ services:
       # Determine the actual IP using 'ifconfig' (Linux/Mac) or 'ipconfig' (Windows).
       # or you can try http://host.docker.internal:<label-studio-port> if you run LS on the same machine
       - LABEL_STUDIO_URL=http://host.docker.internal:8080
-      - LABEL_STUDIO_API_KEY=8c4ba203a4def69d49cba2a7ef425ec1178ddf93
+      - LABEL_STUDIO_API_KEY=669dba67b79285a5a26a10f3c6444cdbec31decf
 
       # YOLO parameters
 

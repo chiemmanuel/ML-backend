@@ -11,7 +11,7 @@ class CustomModel(ControlModel):
     """
 
     type = "RectangleLabels"  
-    model_path = "etude_60.pt"
+    model_path = "etude_53.pt"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
