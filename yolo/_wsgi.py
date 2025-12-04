@@ -3,6 +3,11 @@ import argparse
 import json
 import logging
 import logging.config
+from dotenv import load_dotenv
+from label_studio_ml.api import init_app
+from model import YOLO
+
+load_dotenv()
 
 # Set a default log level if LOG_LEVEL is not defined
 log_level = os.getenv("LOG_LEVEL", "INFO")
@@ -31,9 +36,6 @@ logging.config.dictConfig(
         },
     }
 )
-
-from label_studio_ml.api import init_app
-from model import YOLO
 
 
 _DEFAULT_CONFIG_PATH = os.path.join(os.path.dirname(__file__), "config.json")

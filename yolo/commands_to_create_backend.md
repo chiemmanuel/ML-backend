@@ -1,3 +1,9 @@
+# Add label studio legacy token to the .env
+
+LABEL_STUDIO_API_KEY=
+
+![alt text](<où trouver le legacy token(api key).png>)
+
 # Create venv
 
 python -m venv venv    
@@ -9,7 +15,16 @@ python -m venv venv
 # Install base depencies
 
 pip install wheel setuptools
-pip install cmake  
+
+pip install cmake
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+pip install ultralytics  
+
+pip install waitress
+
+pip install python-dotenv  
 
 # cd into working directory (or not)
 
@@ -24,13 +39,6 @@ label_studio_ml_backend\venv\Scripts\python.exe -m pip install --upgrade pip
 pip install -r requirements-base.txt
 pip install -r requirements.txt
 
-# Install dependencies outside de requirement files
-
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-
-pip install ultralytics  
-
-pip install waitress
 
 # Run server
 
